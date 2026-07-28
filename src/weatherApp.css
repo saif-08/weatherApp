@@ -1,0 +1,12 @@
+.weather{
+   
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1558486012-817176f84c6d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=370");
+ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    background-position: center;
+    min-height: 100vh;
+}

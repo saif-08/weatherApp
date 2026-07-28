@@ -1,0 +1,17 @@
+.form{
+    text-align: center;
+    height: 20vh;
+    display: flex;
+     flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    
+   
+}
+.textfield{
+    width: 20vw;
+    
+}
+.formbutton{
+    width: 10vw;
+}
