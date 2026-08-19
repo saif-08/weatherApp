@@ -8,14 +8,14 @@ export default function WeatherApp(){
         setcityInfo(info)
     };
     let style={
-        margin:"0 0 10px",
+        
         textAlign:"center",
         color:"white"
 
     }
     return(
-        <div className="weather">
-              <h1 style={style}>weather app</h1>
+        <div className="weatherApp">
+              <h1 className='heading' style={style}>weather app</h1>
         <SearchBox updateCity={updateCity}/>
         <InformationCard info={cityInfo}/>
        

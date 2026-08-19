@@ -49,12 +49,13 @@ catch(err){
         
     }
     return (
-        <div >
-            <form className='form' onSubmit={handleSubmit}>
-                <TextField label="Enter City" id="searchbox" color="primary" className='textfield' value={city} onChange={handleChange}/>
-                {err&&<p style={{color:"red"}}>location doesn't exist in our Api</p>}
+        <div className='searchbox'>
+            <form className='searchForm' onSubmit={handleSubmit}>
+                <TextField label="Enter City"  color="primary" className='searchField' value={city} onChange={handleChange}/>
                 
-                 <Button className='formbutton' variant="contained" type="submit" >Search</Button>
+                {err&&<p style={{color:"red",marginTop:"5px",marginBottom:"5px"}}>location doesn't exist in our Api</p>}
+                
+                 <Button className='searchButton' variant="contained" type="submit" >Search</Button>
             </form>
         </div>
     )

@@ -1,17 +1,61 @@
-.form{
-    text-align: center;
-    height: 20vh;
+.searchbox{
+    width: 100%;
+}
+.searchForm{
+    height: 17vh;
+    width: 100%;
     display: flex;
-     flex-direction: column;
-    justify-content:space-around;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    align-content: first baseline;
+
+}
+
+
+ /*  SEARCH BUTTON */
+
+.searchButton {
+    width: 45%;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
     
    
 }
-.textfield{
-    width: 20vw;
+
+.searchButton:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.searchButton:active {
+    transform: scale(0.97);
+}
+.searchField{
+      width: 90%;
+ 
+     border: none; 
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s ease; 
+   
     
 }
-.formbutton{
-    width: 10vw;
+
+
+.searchField:focus {
+    transform: scale(1.02);
+}
+
+
+
+.weatherApp:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.25);
 }

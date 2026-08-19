@@ -26,22 +26,22 @@ export default function InformationCard({info}){
 
   
     return (
-        <div className='infobox'>
-            <h1 style={{color:"white"}}>weatherInfo: {info.description}</h1>
-            <div className=''>
-    <Card sx={{ maxWidth: 345 }}>
+        <div >
+            <h1 className='heading infoheading' style={{marginBottom:"5px"}}>{info.description==undefined ?"weatherInfo:": info.description}</h1>
+            <div className='infobox'>
+    <Card sx={{ maxWidth: 300, borderRadius: 4}}>
       <CardMedia
         sx={{ height: 140 }}
         image={isCloudBroken?brokenCloud:isCloudOvercast?cloudOvercast:isDust?dust:isHaze?haze:isHeavyRain?heavyRain:isLightRain?lightRain:isMist?mist:isSand?sand:isSmoke?smokeUrl:isThunderStorm?thunderstorm:isWinter?winterUrl:isClearSky?clearSky:isFewClouds?fewClouds:clearSky}
         title="green iguana"
       />
       <CardContent  >
-        <Typography gutterBottom variant="h5" component="div" >
+        <Typography gutterBottom variant="h7" component="div" >
           {info.name}&nbsp;
               {isCloudBroken?<CloudIcon style={{color:"skyBlue"}}/>:isCloudOvercast?<CloudIcon style={{color:"skyBlue"}}/>:isDust?<AirIcon/>:isHaze?<AcUnitIcon style={{color:"#8AA3B7"}}/>:isHeavyRain?<ThunderstormIcon style={{color:"#B0BEC5"}}/>:isLightRain?<ThunderstormIcon style={{color:"#B0BEC5"}}/>:isMist?<AcUnitIcon/>:isSand?<AirIcon/>:isSmoke?<AcUnitIcon/>:isThunderStorm?<ThunderstormIcon style={{color:"#B0BEC5"}}/>:isWinter?<AcUnitIcon style={{color:"#8AA3B7"}}/>:isClearSky?<SunnyIcon style={{color:"#FFCC33"}}/>:isFewClouds?<SunnyIcon style={{color:"#FFCC33"}}/>: <SunnyIcon style={{color:"#FFCC33"}}/>}
      
         </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }} component="span">
+        <Typography variant="body2" sx={{ color: 'text.primary' }} component="span">
       <p>Temperature = {info.temp}&deg;C</p>
       <p>Humidity = {info.humidity}</p>
         <p>Max Temperature = {info.temp_max}&deg;C</p>
